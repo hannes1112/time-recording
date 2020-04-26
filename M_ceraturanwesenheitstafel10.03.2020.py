@@ -16,7 +16,7 @@ while start_sqplite_wiederholung == 0:
     loop_AWT = loop_AWT + 1
     start_time = time.time()
 
-    path_DBST = 'C:/Users/ich/Desktop/eigende pogramme/Zeiterfassung/main/Database/SincoTecUserInfo2.db'
+    path_DBST = '#'
     verbindung = sqlite3.connect (path_DBST)
     zeiger = verbindung.cursor()
     zeiger.execute("SELECT Name, Nachname, factor1, Tel, Ort, ID, Geburtstag_j, Geburtstag_m, Geburtstag_t, Notiz_show, OrtName, VonWert_1, BisWert_1, WasWert_1, ID_short FROM Dummydatabase2 ORDER BY Ort, factor1;")#Ort, factor1;
@@ -35,7 +35,7 @@ while start_sqplite_wiederholung == 0:
 
     zeile1_1 ='<html><head><link rel="stylesheet" href="stylesheet.css"><title>Anwesenheitstafel</title><meta http-equiv="refresh" content="'
     zeile1_2 = str(aktuallisirungsrate)
-    zeile1_3 ='"></head><body bgcolor="#FFFFE0"><body class="vbox viewport"><header>Anwesenheitstafel SincoTec <font color="red">Aktualisierung in je '
+    zeile1_3 ='"></head><body bgcolor="#FFFFE0"><body class="vbox viewport"><header>Anwesenheitstafel<font color="red">Aktualisierung in je '
     zeilel_4 = str(aktuallisirungsrate)
     zeilel_5 =' sek.</font></header>'
 
